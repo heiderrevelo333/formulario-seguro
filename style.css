@@ -1,0 +1,144 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', Arial, sans-serif;
+	background: #fff;
+}
+
+.container {
+	display: flex;
+	min-height: 100vh;
+}
+
+.left-panel {
+	background: #fff;
+	flex: 1;
+}
+
+.right-panel {
+	background: #fff;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.formulario {
+	width: 100%;
+	max-width: 420px;
+	background: #fff;
+	border-radius: 16px;
+	padding: 32px 24px 24px 24px;
+	box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.formulario h2 {
+	color: #e6007a;
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.input-group {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 8px;
+	margin-bottom: 6px;
+	gap: 10px;
+}
+
+.input-group label {
+	color: #e6007a;
+	font-size: 1.1rem;
+	min-width: 28px;
+	display: flex;
+	align-items: center;
+}
+
+.input-group input[type="text"],
+.input-group input[type="number"],
+.input-group input[type="email"] {
+	border: none;
+	outline: none;
+	background: transparent;
+	font-size: 1rem;
+	flex: 1;
+	padding: 8px 0;
+	color: #333;
+}
+
+.input-group input::placeholder {
+	color: #bdbdbd;
+	font-weight: 500;
+}
+
+.input-group.categoria {
+	flex-direction: column;
+	align-items: flex-start;
+	border: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	gap: 6px;
+}
+
+.input-group.categoria label {
+	color: #e6007a;
+	font-weight: 600;
+	font-size: 1rem;
+	margin-bottom: 4px;
+}
+
+.categorias {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px 24px;
+}
+
+.categorias label {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 1rem;
+	color: #666;
+	font-weight: 500;
+	background: #f8f8f8;
+	border-radius: 8px;
+	padding: 4px 12px;
+	border: 1.5px solid #e6007a22;
+	transition: border 0.2s;
+	cursor: pointer;
+}
+
+.categorias label input[type="checkbox"] {
+	accent-color: #e6007a;
+	margin-right: 2px;
+}
+
+.btn-enviar {
+	margin-top: 16px;
+	width: 100%;
+	padding: 12px 0;
+	background: linear-gradient(90deg, #e6007a 0%, #7f3ff7 100%);
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: 700;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+	box-shadow: 0 2px 8px #e6007a22;
+	transition: background 0.2s, box-shadow 0.2s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+.btn-enviar:hover {
+	background: linear-gradient(90deg, #7f3ff7 0%, #e6007a 100%);
+	box-shadow: 0 4px 16px #e6007a33;
+}
