@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registrar Proyecto</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+	<div class="container" style="display: flex;">
+		<div class="left-panel" style="flex: 1; position: relative;">
+			<div class="background-overlay"></div>
+			<div class="particles"></div>
+			<div class="left-content">
+				<img src="https://agenciacristal.com/wp-content/uploads/2025/01/logofinal_otro.png" alt="Logo Cristal" class="logo-cristal">
+				<h1>Cuéntanos sobre tu proyecto</h1>
+				<h3>Transformamos tu idea en software innovador y de alto impacto</h3>
+				<p>Una vez enviado, nuestro líder de proyectos recibirá una notificación con tu propuesta para evaluarla y darte una respuesta ágil</p>
+			</div>
+		</div>
+		<div class="right-panel" style="flex: 1;">
+			<form class="formulario">
+				<h2>Registrar Proyecto</h2>
+				<div class="input-group">
+					<label><i class="fa-solid fa-location-dot"></i></label>
+					<input type="text" placeholder="Nombre del proyecto" required>
+				</div>
+				<div class="input-group">
+					<label><i class="fa-solid fa-calendar-days"></i></label>
+					<input type="text" placeholder="Plazo estimado (Ej: 3 meses)" required>
+				</div>
+				<div class="input-group">
+					<label><i class="fa-solid fa-align-left"></i></label>
+					<input type="text" placeholder="Descripción del proyecto" required>
+				</div>
+				<div class="input-group">
+					<label><i class="fa-solid fa-dollar-sign"></i></label>
+					<input type="number" placeholder="Presupuesto estimado ($)" required>
+				</div>
+				<div class="input-group categoria">
+					<label><i class="fa-solid fa-layer-group"></i> Categoría del proyecto</label>
+					<div class="categorias">
+						<label><input type="checkbox"> <i class="fa-solid fa-globe"></i> Web</label>
+						<label><input type="checkbox"> <i class="fa-solid fa-mobile"></i> Móviles</label>
+						<label><input type="checkbox"> <i class="fa-solid fa-robot"></i> IA</label>
+						<label><input type="checkbox"> <i class="fa-solid fa-desktop"></i> Escritorio</label>
+					</div>
+				</div>
+				<div class="input-group">
+					<label><i class="fa-solid fa-user"></i></label>
+					<input type="text" placeholder="Su nombre" required>
+				</div>
+				<div class="input-group">
+					<label><i class="fa-brands fa-whatsapp"></i></label>
+					<input type="text" placeholder="Su Whatsapp" required>
+				</div>
+				<div class="input-group">
+					<label><i class="fa-solid fa-envelope"></i></label>
+					<input type="email" placeholder="Su Correo" required>
+				</div>
+				<button type="submit" class="btn-enviar"><i class="fa-solid fa-paper-plane"></i> Enviar Proyecto</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
