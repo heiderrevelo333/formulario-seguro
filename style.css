@@ -142,3 +142,68 @@ body {
 	background: linear-gradient(90deg, #7f3ff7 0%, #e6007a 100%);
 	box-shadow: 0 4px 16px #e6007a33;
 }
+
+.left-panel {
+	position: relative;
+	flex: 1;
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.background-overlay {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: url('https://images.unsplash.com/photo-1649972904349-6e44c42644a7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')center/cover no-repeat;
+	z-index: 1;
+}
+.background-overlay::after {
+	content: '';
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: rgba(126, 0, 60, 0.75);
+	z-index: 2;
+}
+
+.left-content {
+	position: relative;
+	z-index: 4;
+	color: #fff;
+	text-align: center;
+	max-width: 420px;
+	margin: 0 auto;
+	padding: 32px 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 18px;
+}
+
+.logo-cristal {
+	width: 160px;
+	margin-bottom: 12px;
+	background: #fff;
+	border-radius: 8px;
+	padding: 8px 16px;
+	box-shadow: 0 2px 8px #fff3;
+}
+
+.left-content h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 0 0 8px 0;
+}
+.left-content h3 {
+	font-size: 1.1rem;
+	font-weight: 500;
+	margin: 0 0 8px 0;
+	color: #ffe0f0;
+}
+.left-content p {
+	font-size: 1rem;
+	font-weight: 400;
+	color: #fff;
+	margin: 0;
+}
