@@ -207,3 +207,46 @@ body {
 	color: #fff;
 	margin: 0;
 }
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-panel, .right-panel {
+        min-height: 50vh;
+        flex: unset;
+        width: 100%;
+    }
+    .left-content {
+        max-width: 100%;
+        padding: 24px 12px;
+    }
+    .formulario {
+        max-width: 100%;
+        padding: 24px 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .left-content h1 {
+        font-size: 1.3rem;
+    }
+    .left-content h3 {
+        font-size: 1rem;
+    }
+    .formulario h2 {
+        font-size: 1.2rem;
+    }
+    .input-group label,
+    .categorias label {
+        font-size: 0.95rem;
+    }
+    .btn-enviar {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+    .logo-cristal {
+        width: 120px;
+        padding: 6px 10px;
+    }
+}
