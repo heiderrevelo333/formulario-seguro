@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 	<div class="container" style="display: flex;">
@@ -60,6 +61,10 @@
 					<label><i class="fa-solid fa-envelope"></i></label>
 					<input type="email" placeholder="Su Correo" required>
 				</div>
+				<div class="input-group">
+                    <div class="g-recaptcha" data-sitekey="6LfcrrcrAAAAAFfnOidF0U1bINJ50So8AJyHXJd8"></div>
+                </div>
+
 				<button type="submit" class="btn-enviar"><i class="fa-solid fa-paper-plane"></i> Enviar Proyecto</button>
 			</form>
 		</div>
