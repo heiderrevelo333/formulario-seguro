@@ -1,3 +1,30 @@
+.input-error {
+	display: block;
+	background: #ffeaea;
+	color: #b71c1c;
+	border-radius: 10px;
+	border: 1.5px solid #f8bcbc;
+	font-size: 1.05rem;
+	font-weight: 500;
+	margin-top: 6px;
+	margin-bottom: 2px;
+	padding: 12px 18px 12px 38px;
+	position: relative;
+	min-height: 28px;
+	line-height: 1.4;
+	box-sizing: border-box;
+	transition: all 0.2s;
+}
+.icono-error {
+	position: absolute;
+	left: 14px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.2em;
+	color: #b71c1c;
+	font-weight: bold;
+	display: inline-block;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -50,6 +77,11 @@ body {
 	padding-bottom: 8px;
 	margin-bottom: 6px;
 	gap: 10px;
+}
+
+.input-group.has-error {
+	border-bottom-color: #b71c1c; 
+	transition: border-bottom-color 0.2s ease-in-out;
 }
 
 .input-group label {
